@@ -73,3 +73,23 @@ Python has the following data types built-in by default, in these categories:
 
 ****What is interpreter and complier in python?
     Interpreter translates just one statement of the program at a time into machine code. Compiler scans the entire program and translates the whole of it into machine code at once. An interpreter takes very less time to analyze the source code.
+
+
+~~~~return:Returning values-we use the keyword return, to tell python that this is the return value of a function
+-when we call the function we store that value in a variable.
+the power of the return statement is it allows us to combine calls to functions and more complex operations which makes your code more reusable.
+-return keyword in a functiontells the function to pass data back. When we call the function, we can store the returned value in a variable. Functions can return multiple variables. Don't forget! store all returned values in variables. Functions can also return nothing and just exsist. 
+
+****refactoring: re-writing code to be more self documenting.
+
+
+~~~~// FLOOR DIVISION - double slash operator: a floor division // divides a number and takes the integer part of the division as the result.
+
+****none-a special data type in python used to indicate that things are empty or they returned nothing,
+
+
+****What are the values passed into functions as input called?
+    A parameter is a special kind of variable used in a function to refer to one of the pieces of data provided as input to the function.
+
+****What is the purpose of the def keyword?
+The def keyword is used to create, (or define) a function.
