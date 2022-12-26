@@ -107,3 +107,25 @@ def order_numbers(number1, number2):
 
 smaller, bigger = order_numbers(100,99)
 print(smaller,bigger)
+
+# conditional block
+
+# The is_positive function should return True if the number received is positive, otherwise it returns None. Can you fill in the gaps to make that happen?
+
+def is_positive(number):
+    if number > 0:
+        return true
+
+
+def is_positive(number):
+  if number > 0:
+    return True
+  else:
+    return False
+
+# modulo operator
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    return False
