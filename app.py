@@ -3,7 +3,7 @@
 def greeting(name):
     print("Welcome, " + name)
     print("You are part of " + department)
-    
+
 # variables
 
 # expressions 
@@ -130,3 +130,136 @@ def is_even(number):
     if number % 2 == 0:
         return True
     return False
+
+
+def hint_username(username):
+    if len(username) < 3:
+        print("Invalid username. Must be at least 3 characters long")
+    else:
+        if len(username) > 15:
+            print("Invalid username. Must be at most 15 characters long")
+        else:
+            print("Valid username")
+
+def hint_username(username):
+    if len(username) < 3:
+        print("Invalid username. Must be at least 3 characters long")
+    elif len(username) > 15:
+            print("Invalid username. Must be at most 15 characters long")
+        else:
+            print("Valid username")
+
+
+def calculate_storage(filesize):
+    block_size = 4096
+    # Use floor division to calculate how many blocks are fully occupied
+    full_blocks = block_size // filesize
+    # Use the modulo operator to check whether there's any remainder
+    partial_block_remainder = block_size % filesize
+    # Depending on whether there's a remainder or not, return
+    # the total number of bytes required to allocate enough blocks
+    # to store your data.
+    if partial_block_remainder > 0:
+        return block_size * 2
+    return block_size
+
+print(calculate_storage(1))    # Should be 4096
+print(calculate_storage(4096)) # Should be 4096
+print(calculate_storage(4097)) # Should be 8192
+print(calculate_storage(6000)) # Should be 8192
+
+
+def color_translator(color):
+	if color == "red":
+		hex_color = "#ff0000"
+	elif color == "green":
+		hex_color = "#00ff00"
+	elif color == "blue":
+		hex_color = "#0000ff"
+	else:
+		hex_color = "unknown"
+	return hex_color
+
+print(color_translator("blue")) # Should be #0000ff
+print(color_translator("yellow")) # Should be unknown
+print(color_translator("red")) # Should be #ff0000
+print(color_translator("black")) # Should be unknown
+print(color_translator("green")) # Should be #00ff00
+print(color_translator("")) # Should be unknown
+
+
+def exam_grade(score):
+	if score > 95:
+		grade = "Top Score"
+	elif score >= 60:
+		grade = "Pass"
+	else:
+		grade = "Fail"
+	return grade
+
+print(exam_grade(65)) # Should be Pass
+print(exam_grade(55)) # Should be Fail
+print(exam_grade(60)) # Should be Pass
+print(exam_grade(95)) # Should be Pass
+print(exam_grade(100)) # Should be Top Score
+print(exam_grade(0)) # Should be Fail
+
+
+def longest_word(word1, word2, word3):
+	if len(word1) >= len(word2) and len(word1) >= len(word3):
+		word = word1
+	elif len(word2) >= len(word1) and len(word2) >= len(word3):
+		word = word2
+	else:
+		word = word3
+	return(word)
+
+print(longest_word("chair", "couch", "table"))
+print(longest_word("bed", "bath", "beyond"))
+print(longest_word("laptop", "notebook", "desktop"))
+
+
+The value of the python expression ((10 >= 5*2) and (10 <= 5*2)) is True
+
+The code will definitely return a Boolean value(True or False).
+
+For the expression to be True , the two statements must be True. The AND gate returns True if the whole statement is True.
+
+(10 >= 5*2) is True because 10 is equals to 5 × 2 = 10.
+
+(10 <= 5*2) is True because 10 is equals to 5 × 2 = 10.
+
+The two statements are True . Therefore,
+
+True and True = True.
+
+
+def fractional_part(numerator, denominator):
+	# Operate with numerator and denominator to 
+# keep just the fractional part of the quotient
+	return (numerator / denominator) % 1 if denominator else 0
+
+print(fractional_part(5, 5)) # Should be 0
+print(fractional_part(5, 4)) # Should be 0.25
+print(fractional_part(5, 3)) # Should be 0.66...
+print(fractional_part(5, 2)) # Should be 0.5
+print(fractional_part(5, 0)) # Should be 0
+print(fractional_part(0, 5)) # Should be 0
+
+
+def format_name(first_name, last_name):
+	
+	string = 'Name: ' + ', '.join([name for name in [last_name, first_name] if name]) if any([last_name, first_name]) else ''
+	return string 
+
+print(format_name("Ernest", "Hemingway"))
+# Should return the string "Name: Hemingway, Ernest"
+
+print(format_name("", "Madonna"))
+# Should return the string "Name: Madonna"
+
+print(format_name("Voltaire", ""))
+# Should return the string "Name: Voltaire"
+
+print(format_name("", ""))
+# Should return an empty string
