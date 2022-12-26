@@ -1,3 +1,9 @@
+
+
+def greeting(name):
+    print("Welcome, " + name)
+    print("You are part of " + department)
+    
 # variables
 
 # expressions 
@@ -6,11 +12,6 @@
 
 # functions: print() write text on the screen, type()tells us the certain type of value,
 # str() converts number into a string
-
-def greeting(name):
-    print("Welcome, " + name)
-    print("You are part of " + department)
-
 # >>>greeting("Blake", "IT Support")
 # Welcome, Blake
 # You are a part of IT Support
