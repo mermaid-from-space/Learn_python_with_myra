@@ -153,3 +153,24 @@ else:
 
 
 Remember: The if-block will be executed if condition1 is True. The elif-block will be executed if condition1 is False and condition2 is True. The else block will be executed when all the specified conditions are false.
+
+
+The ability to accurately perform repetitive tasks and never get tired is why computers are so great for automation. The automated task could be anything like copying files to a bunch of computers on a network, sending personalized emails to a list of users, or verifying that a process is still running. It doesn't matter how complex the task is, your computer will do it as many times as you tell it to.
+
+
+while loops
+for loops 
+recursion
+
+while loops: instruct your computer to continuously execute your code based on the value of a condition.
+
+initializing: To give value to a varable
+
+~~~~ANATOMY OF A WHILE LOOP 
+
+A while loop will continuously execute code depending on the value of a condition. 
+It begins with the keyword while, followed by a comparison to be evaluated, then a colon.
+ On the next line is the code block to be executed, indented to the right.
+  Similar to an if statement, the code in the body will only be executed if the comparison is evaluated to be true. 
+  What sets a while loop apart, however, is that this code block will keep executing as long as the evaluation statement is true. 
+  Once the statement is no longer true, the loop exits and the next line of code will be executed.  

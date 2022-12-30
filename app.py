@@ -263,3 +263,52 @@ print(format_name("Voltaire", ""))
 
 print(format_name("", ""))
 # Should return an empty string
+
+
+# learning about while loops
+
+x = 0
+while x > 5:
+    print("Not there yet, x=" + str(x))
+    x = x + 1
+print("x=" + str(x))
+
+# There are two lines in the body of the loop. In the first line, 
+# we print a message followed by the current value of x.
+#  In the second line, we increment the value of x. 
+#  We do this by adding 1 to its current value and assigning it back to x. 
+#  So after the first execution of the body of the loop, x will be 1 instead of 0. 
+#  Because this is a loop, the computer doesn't just continue executing with the next line in the script.
+#   Instead, it loops back around to re-evaluate the condition for the while loop. 
+#   And because 1 here is still smaller than 5, it executes the body of the loop again. 
+#   It then prints the message and once more increments x by 1. So the x is now 2.
+#    The computer will keep doing this until the condition isn't true anymore. 
+#    In this example, the condition will be false when x is no longer smaller than 5. 
+#    Once the condition is false, the loop finishes, and the next line is executed.
+#     And finally, the last line of our code prints the last value of x.
+
+def attempts(n):
+    x = 1
+    while x <= n:
+        print("Attempt " + str(x))
+        x += 1
+    print("Done")
+
+attempts(5)
+
+# In this example, we start out by initializing a variable called x. 
+# In this case, we initialize it with a value of 1. 
+# Then, we enter our while loop which checks to see if the value inside of the x variable is less than the parameter n that the function received. 
+# If that comparison evaluates to true, then the code inside the while block is executed. 
+# Say we pass a value of 5 as a parameter to this function. 
+# In the first pass through the loop, x is always equal to 1, so the comparison: 1 smaller than or equal to 5 would be true and we then enter the body of the loop.
+#  In the body, we first print a message indicating that the current attempt number and then we increase the value of x by 1. 
+#  To increment the number we're using a slightly different expression than before. 
+#  x +=1 is a shorthand version of x = x+1. 
+#  You can use either expression since they both mean the same thing. 
+#  The process continues until the result of the comparison isn't true anymore, which happens when x is bigger than n.
+
+username = get_username()
+while not valid_username(username):
+    print("Invalid username")
+    username = get_username()
