@@ -312,3 +312,56 @@ username = get_username()
 while not valid_username(username):
     print("Invalid username")
     username = get_username()
+
+# In this case, the body of the while loop will be executed until the user enters a valid username.
+
+# countdown while loop! 
+def count_down(start_number):
+  current = 3
+  while (current > 0):
+    print(current)
+    current -= 1
+  print("Zero!")
+
+count_down(3)
+
+# here is an infinite loop:
+
+while x % 2 == 0:
+    x = x / 2
+
+# This cycle will finish for positive and negative values of x. 
+# But what would happen if x was zero? 
+# The remainder of 0 divided by 2 is 0, so the condition would be true. 
+# The result of dividing 0 by 2 would also be zero, so the value of x wouldn't change. 
+# This loop would go on forever, and so we'd get an infinite loop. 
+# If our code was called with x having the value of zero, the computer would just waste resources doing a division that would never lead to the loop stopping. 
+# The program would be stuck in an infinite loop circling background endlessly
+
+if x != 0:
+    while x % 2 ==0:
+        x = x / 2
+
+# nest this while loop inside an if statement just like this. 
+# With this approach, the while loop is executed only when x is not zero. 
+# Alternatively, we could add the condition directly to the loop using a logical operator like in this example. 
+# This makes sure we only enter the body of the loop for values of x that are both different than zero and even.
+
+def print_range(start, end):
+	# Loop through the numbers from start to end
+	n = start
+	while n <= end:
+		print(n)
+		n+=1
+
+print_range(1, 5)  # Should print 1 2 3 4 5 (each number on its own line) 
+
+# break keyword example 
+
+while True:
+    do_something_cool()
+    if user_requested_to_stop():
+        break 
+
+# How do you avoid the most common pitfalls when writing while loops? 
+# First, remember to initialize your variables, and second, check that your loops won't run forever. 

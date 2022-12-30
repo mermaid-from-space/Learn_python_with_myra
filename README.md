@@ -174,3 +174,7 @@ It begins with the keyword while, followed by a comparison to be evaluated, then
   Similar to an if statement, the code in the body will only be executed if the comparison is evaluated to be true. 
   What sets a while loop apart, however, is that this code block will keep executing as long as the evaluation statement is true. 
   Once the statement is no longer true, the loop exits and the next line of code will be executed.  
+
+  Infinite loop: A loop that keeps executing and never stops.
+
+   BREAK: In Python, we use the break keyword which you can see here to signal that the current loop should stop running. We can use it not only to stop infinite loops but also to stop a loop early if the code has already achieved what's needed
