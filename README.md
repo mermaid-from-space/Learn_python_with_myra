@@ -178,3 +178,13 @@ It begins with the keyword while, followed by a comparison to be evaluated, then
   Infinite loop: A loop that keeps executing and never stops.
 
    BREAK: In Python, we use the break keyword which you can see here to signal that the current loop should stop running. We can use it not only to stop infinite loops but also to stop a loop early if the code has already achieved what's needed
+
+
+***for Loop : iterates over a sequence of values
+
+in Python and a lot of other programming languages, a range of number will start with the value 0 by default.
+
+the list of numbers generated will be one less thatn the given value.
+
+the power of the for loop is that we can use it to iterate over a sequence of values of any type, not just a range of numbers
+

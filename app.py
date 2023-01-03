@@ -455,3 +455,19 @@ multiplication_table(5)
 
 multiplication_table(8)	
 # Should print: 8x1=8 8x2=16 8x3=24
+
+# .......................................................................
+
+for x in range(5):
+    print(x)
+
+# iterate over a list of numbers to calculate the total sum and average
+
+values = [ 23, 52, 59, 37, 48]
+sum = 0
+length = 0
+for values in values:
+    sum += value
+    length += 1
+
+print("Total sum: " + str(sum) + " - Average: " + str(sum/length))
