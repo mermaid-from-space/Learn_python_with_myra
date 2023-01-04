@@ -471,3 +471,23 @@ for values in values:
     length += 1
 
 print("Total sum: " + str(sum) + " - Average: " + str(sum/length))
+
+#  Use while loops when you want to repeat an action until a condition changes. 
+# Use for loops when there's a sequence of elements that you want to iterate.
+
+# example d* range() function we want to start with 1 and not zero
+
+product = 1
+for n in range(1,10):
+    product = product * n
+
+print(product)
+
+# FAHRENHEIT TO CELSIUS converstion formula example e* ***********
+
+def to_celsius(x):
+    return(x-32)*5/9
+
+for x in range(0,101,10):
+    print(x, to_celsius(x))
+
