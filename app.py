@@ -491,3 +491,25 @@ def to_celsius(x):
 for x in range(0,101,10):
     print(x, to_celsius(x))
 
+# dominoes tile maker f* **********
+for left in range(7):
+    for right in range(left, 7):
+        print("[" + str(left) + "|" + str(right) + "]", end=" ")
+    print()
+
+
+# home and away teams example g* *************************
+teams = [ 'Dragons' , 'Wolves' , 'Pandas' , 'Unicorns']
+for home_team in teams:
+    for away_team in teams:
+        if home_team != away_team:
+            print(home_team + " vs " + away_team)
+
+
+# Greet your friends function*******************
+
+def greet_friends(friends):
+    for friend in friends:
+        print("Hi " + friend)
+
+greet_friends(['Taylor' , 'Luisa' , 'Jamaal' , 'Eli'])
