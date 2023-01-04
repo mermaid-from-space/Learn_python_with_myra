@@ -265,7 +265,7 @@ Syntax:
 for variable in sequence:
     body
 
-    
+
 The range() function:
 
 range() generates a sequence of integer numbers. It can take one, two, or three parameters:
@@ -290,4 +290,19 @@ Break & Continue
 You can interrupt both while and for loops using the break keyword. We normally do this to interrupt a cycle due to a separate condition.
 
 You can use the continue keyword to skip the current iteration and continue with the next one. This is typically used to jump ahead when some of the elements of the sequence aren’t relevant.
+
+
+
+***********RECURSION***************
+Recursion is the repeated application of the same procedure to a smaller problem.
+Russian nesting doll? They are a great visual example of recursion. Each doll has a smaller doll inside it. 
+When you open up the doll to find the smaller one inside, you keep going until you reach the smallest doll which can't be opened.
+
+Recursion lets us tackle complex problems by reducing the problem to a simpler one.
+
+in programming, recursion is a way of doing a repetitive task by having a function call itself. 
+A recursive function calls itself usually with a modified parameter until it reaches a specific condition. 
+This condition is called the base case.
+
+ In Python by default, you can call a recursive function 1,000 times until you reach the limit. 
 
