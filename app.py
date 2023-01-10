@@ -785,3 +785,16 @@ def decade_counter(year):
 		year += 10
 	return year
 decade_counter(45)
+
+.............................
+# Modify the double_word function so that it returns the same word repeated twice,
+# followed by the length of the new doubled word. For example, double_word("hello") should return hellohello10.
+
+def double_word(word):
+    word = word * 2
+    word_length = str(len(word))
+    return word + word_length
+
+print(double_word("hello")) # Should return hellohello10
+print(double_word("abc"))   # Should return abcabc6
+print(double_word(""))      # Should return 0
