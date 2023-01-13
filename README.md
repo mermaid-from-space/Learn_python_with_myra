@@ -314,3 +314,10 @@ Strings: data type that is used to represent a peice of text. Written between qo
  The range we use when accessing a slice of a string works just like the one created by the range function.
 
  strings in python are immutable- they can't be modified.
+
+ ***Method: a function associated with a specific class.
+
+ the index method: returns the index of the given substring, inside the string  
+ pets = "Cats & Dogs"
+ pets.index("&")
+ 5

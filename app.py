@@ -850,3 +850,15 @@ print(message)
 message = "every chair I get sucks"
 print(message)
 
+# using the index method! 
+word = "supercalifragilisticexpialidocious"
+print(word.index("x"))
+
+# Here, it's a conditional that can be either true or false. key word in...
+#  It'll be true if the substring is part of the string, and false if it's not.
+pets = "Cats & Dogs"
+pets.index("&")
+pets.index("C")
+print(pets.index("a"))
+print("Dragons" in pets) 
+print("Cats" in pets)
