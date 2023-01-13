@@ -839,3 +839,14 @@ fruit[5:]
 fruit[:5] + fruit[5:]
 'Mangosteen'
 
+# you have a string with a character that's wrong and you want to fix it.
+# We're not changing the underlying string that was assigned to it before. 
+# We're assigning a whole new string with different content. 
+message = "A kong string with a silly typo"
+new_message = message[0:2] + "l" + message[3:]
+print(new_message)
+message = "my back hurts"
+print(message)
+message = "every chair I get sucks"
+print(message)
+

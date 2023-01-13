@@ -312,3 +312,5 @@ Strings: data type that is used to represent a peice of text. Written between qo
 
  we can also access a slice of a string. A slice is the portion of a string that can contain more than one character, also sometimes called a substring. We do that by creating a range using a colon as a separator.
  The range we use when accessing a slice of a string works just like the one created by the range function.
+
+ strings in python are immutable- they can't be modified.
