@@ -873,3 +873,14 @@ def replace_domain(email, old_domain, new_domain):
       new_email = email[:index] + "@" + new_domain
       return new_email
   return email  
+
+# string methods let you perform transformations or formatting on the string text, like upper, and its opposite, lower. 
+# These methods are really useful when you're handling user input. Let's say you wanted to check if the user answered yes to a question. 
+# How would you know if the user typed it using upper or lower case?
+#  You don't need to, you just transform the answer to the case you want. Like this example.
+print("Mountains".upper())
+print("Mountains".lower())
+
+answer = 'Yes'
+if answer.lower() == "yes":
+  print("User said yes")
