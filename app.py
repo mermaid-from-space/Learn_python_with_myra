@@ -111,7 +111,8 @@ print(smaller,bigger)
 
 # conditional block
 
-# The is_positive function should return True if the number received is positive, otherwise it returns None. Can you fill in the gaps to make that happen?
+# The is_positive function should return True if the number received is positive, otherwise it returns None. 
+# Can you fill in the gaps to make that happen?
 
 def is_positive(number):
     if number > 0:
@@ -885,7 +886,7 @@ answer = 'Yes'
 if answer.lower() == "yes":
   print("User said yes")
 
-#  strip method. This method will get rid of surrounding spaces in the string. 
+#  strip() method. This method will get rid of surrounding spaces in the string. 
 #  If we ask the user for an answer, we usually don't care about any surrounding spaces. 
 #  So it's a good idea to use the strip method to get rid of any white space. 
 #  This means that strip doesn't just remove spaces, 
@@ -899,5 +900,67 @@ print(" yes ".lstrip())
 
 print(" yes ".rstrip())
 
-# The method count returns how many times a given substring appears within a string.
+# The method count() returns how many times a given substring appears within a string.
 print("The number of ttimes e occurs in this strng is 4".count("e"))
+
+
+# The method endswith() resturns whether the string ends with a ceratin substring
+print("Forest".endswith("rest"))
+
+# The method isnumeric() returns whether the string's made up of just numbers
+print("Forest".isnumeric())
+print("12345".isnumeric())
+
+#  if we have a string that is numeric, we can use the int() function to convert it to an actual number.
+print(int("12345") + int("54321"))
+
+# we can concatenate strings using the plus sign. The join method can also be used for concatenating.
+# To use the join method, we have to call it on the string that'll be used for joining. In this case, we're using a string with a space in it. 
+# The method receives a list of strings and returns one string with each of the strings joined by the initial string
+print(" ".join(["This", "is", "a", "phrase", "joined", "by", "spaces"]))
+print("...".join(["This", "is", "a", "phrase", "joined", "by", "triple", "dots"]))
+
+
+# The split() method returns a list of all the words in the initial string and it automatically splits by any whitespace. 
+# It can optionally take a parameter and split the strings by another character, like a comma or a dot
+print("This is another example".split())
+
+
+# In this example, we have two variables, name and number. We generate a string that has those variables in 
+# it by using the curly brackets placeholder to show where the variables should be written. We then pass the variables as a 
+# parameter to the format method. 
+# See how it doesn't matter that name is a string and number is an integer? 
+# The format() method deals with that, so we don't have to
+name = "Manny"
+number = len(name) * 3
+print("Hello {}, your lucky number is {}")
+print("Your lucky number is {number}, {name}.".format(name=name, number=len(name) * 3))
+
+# format() method example
+def student_grade(name, grade):
+	return "{name} received {grade}% on the exam".format(name=name, grade=grade)
+
+print(student_grade("Reed", 80))
+print(student_grade("Paige", 92))
+print(student_grade("Jesse", 85))
+
+# Let's say you want to output the price of an item with and without tax.
+# we can make the format function print only two decimals, like this.
+# this is an example of formatting expressions
+
+# These expressions are needed when we want to tell Python to format our values in a way that's different from the default. 
+# The expression starts with a colon to separate it from the field name that we saw before. After the colon, we write .2f. 
+# This means we're going to format a float number and that there should be two digits after the decimal dot. 
+# So no matter what the price is, our function always prints two decimals.
+price = 7.5
+with_tax = price * 1.09
+print(price, with_tax)
+print("Base price: ${:.2f}. With Tax: ${:.2f}".format(price, with_tax))
+
+# using format and float to fix the Fahrenheit to Celsius temperature table:
+def to_celsius(x):
+    return(x-32)*5/9
+
+for x in range(0,101,10):
+    # print(x, to_celsius(x))
+    print("{:>3} F | {:>6.2f} C".format(x, to_celsius(x)))
