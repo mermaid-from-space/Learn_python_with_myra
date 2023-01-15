@@ -884,3 +884,20 @@ print("Mountains".lower())
 answer = 'Yes'
 if answer.lower() == "yes":
   print("User said yes")
+
+#  strip method. This method will get rid of surrounding spaces in the string. 
+#  If we ask the user for an answer, we usually don't care about any surrounding spaces. 
+#  So it's a good idea to use the strip method to get rid of any white space. 
+#  This means that strip doesn't just remove spaces, 
+#  it also removes tabs and new line characters, which are all characters we don't usually want in user-provided strings. 
+#  There are two more versions of this method, lstrip rstrip, 
+#  to get rid of the whitespace characters just to the left or to the right of the string instead of both sides.
+
+print(" yes ".strip())
+
+print(" yes ".lstrip())
+
+print(" yes ".rstrip())
+
+# The method count returns how many times a given substring appears within a string.
+print("The number of ttimes e occurs in this strng is 4".count("e"))
