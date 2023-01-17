@@ -1050,3 +1050,45 @@ print(replace_ending("The weather is nice in May", "may", "april"))
 # Should display "The weather is nice in May"
 print(replace_ending("The weather is nice in May", "May", "April")) 
 # Should display "The weather is nice in April"
+
+
+# ***********Lists in Pythonnnnnnnn
+# Eventually in your scripts, you want to develop code that manipulates collections of items like a list of strings 
+# representing all the file names in a directory or a list of integers representing the size of network packets. 
+# This is where the list data type comes in handy. You can think of lists as long boxes with the space inside the box divided up into different slots. 
+# Each slot can contain a different value. 
+x = ["Now", "we", "are", "cooking!"]
+print(type(x))
+print(x)
+print(len(x))
+print("are" in x)
+print("Today" in x)
+# use square brackets to indicate where the list starts and ends.
+print(x[0])
+print(x[3])
+# As with strings, we can also use indexes to create a slice of the list. For this, we use ranges of two numbers separated by a colon
+print(x[1:3])
+
+
+# The append method adds a new element at the end of the list. It doesn't matter how long the list is.
+fruits = ["Pineapple", "Banana", "Apple", "Melon"]
+fruits.append("Kiwi")
+print(fruits)
+# The insert method takes an index as the first parameter and an element as the second parameter. 
+# It adds the element at that index in the list. 
+# To add it as the first element, we use index zero and we can use any other number.
+fruits.insert(0, "Orange")
+print(fruits)
+fruits.insert(25, "Peach")
+print(fruits)
+# The remove method removes from the list the first occurrence of the element we pass to it.
+fruits.remove("Melon")
+print(fruits)
+# The pop method returns the element that was removed at the index that was passed.
+fruits.pop(3)
+print(fruits)
+# In the last way to modify the contents of a list is to change an item by assigning something else to that position,
+fruits[2] = "Strawberry"
+print(fruits)
+
+
