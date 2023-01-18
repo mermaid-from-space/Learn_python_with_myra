@@ -1094,7 +1094,9 @@ print(fruits)
 # *********TUPLES OMG********
 # Tuples are sequences of elements of any type that are immutable. We write tuples in parentheses instead of square brackets.
 # when using tuples the position of the elements inside the tuple have meaning. 
-# Tuples are used for lots of different things in Python. One common example is the return value of functions. When a function returns more than one value, it's actually returning a tuple. Remember the function to convert seconds to hours, minutes, and seconds that we saw a while back? Here just to remind you. 
+# Tuples are used for lots of different things in Python. One common example is the return value of functions. 
+# When a function returns more than one value, it's actually returning a tuple. Remember the function to convert seconds to hours, 
+# minutes, and seconds that we saw a while back? Here just to remind you. 
 # This function returns three values. In other words, it returns a tuple of three elements.
 def convert_seconds(seconds):
     hours = seconds // 3600
@@ -1180,4 +1182,26 @@ print(multiples)
 multiples = [ x*7 for x in range(1,11)]
 print(multiples)
 
+
+# Say we have a list of strings with the names of programming languages like this one, and we want to generate a list of the length of the strings. 
+# We could iterate over the list and add them using a pen like we did before. Or we could use a list comprehension like this
+languages = ["Python", "Perl", "Ruby", "Go", "Jave", "C"]
+lengths = [len(language) for language in languages]
+print(lengths)
+#  In this case we just want the element x to be a part of the list, 
+#  but we only want the numbers where the remainder of the division by 3 is 0. So we add the conditional clause after the range.
+z = [x for x in range(0,101) if x % 3 == 0]
+print(z)
+
+# The odd_numbers function returns a list of odd numbers between 1 and n, inclusively. 
+# Fill in the blanks in the function, using list comprehension. 
+# Hint: remember that list and range counters start at 0 and end at the limit minus 1.
+def odd_numbers(n):
+	return [x for x in range(1, n+1) if x % 2 == 1]
+
+print(odd_numbers(5))  # Should print [1, 3, 5]
+print(odd_numbers(10)) # Should print [1, 3, 5, 7, 9]
+print(odd_numbers(11)) # Should print [1, 3, 5, 7, 9, 11]
+print(odd_numbers(1))  # Should print [1]
+print(odd_numbers(-1)) # Should print []
 
