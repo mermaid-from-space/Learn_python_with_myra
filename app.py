@@ -1139,3 +1139,45 @@ print("Total characters: {}, Average length: {}" .format(chars, chars/len(animal
 winners = ["Ashely", "Dylan", "Reese"]
 for index, person in enumerate(winners):
   print("{} - {}".format(index + 1, person))
+
+
+# Say you have a list of tuples containing two strings each. 
+# The first string is an email address and the second is the full name of the person with that email address. 
+# You want to write a function that creates a new list containing one string per person including their name and the email address 
+# between angled brackets. 
+# the format usually used in emails like this. So what do we need to do?
+def full_emails(people):
+  result = []
+  for email, name in people:
+    result.append("{} <{}>".format(name,email))
+  return result
+
+print(full_emails([("alex@example.com", "Alex Deigo"), ("shay@example.com", "Shay Brandt")]))
+
+
+# Try out the enumerate function for yourself in this quick exercise. 
+# Complete the skip_elements function to return every other element from the list, 
+# this time using the enumerate function to check if an element is in an even position or an odd position.
+def skip_elements(elements):
+	new_list = []
+	for index, element in enumerate(elements):
+		if index % 2 == 0:
+			new_list.append(element)
+	
+	return new_list
+
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+
+# ***LIST COMPREHENSIONS
+# List comprehensions: lets us create new lists based on sequences or ranges
+multiples = []
+for x in range(1,11):
+  multiples.append(x*7)
+
+print(multiples)
+# oooor do this
+multiples = [ x*7 for x in range(1,11)]
+print(multiples)
+
+
