@@ -1119,3 +1119,23 @@ print(file_size(('Class Assignment', 'docx', 17875))) # Should print 17.46
 print(file_size(('Notes', 'txt', 496))) # Should print 0.48
 print(file_size(('Program', 'py', 1239))) # Should print 1.21
 
+
+
+# In this code, we're iterating over a list of strings. For each of the strings, we get its length and add it to the total amount of characters. 
+# At the end we print the total and the average which we get by dividing the total by the length of the list. 
+# You can see we're using the len function twice, once to get the length of the string and then again to get the amount of elements in the list
+animals = ["Lion", "Zebra", "Dolphin", "Monkey"]
+chars = 0
+for animal in animals:
+  chars += len(animal)
+
+print("Total characters: {}, Average length: {}" .format(chars, chars/len(animals)))
+
+
+# ****enumerate function***
+# The enumerate function returns a tuple for each element in the list. 
+# The first value in the tuple is the index of the element in the sequence. 
+# The second value in the tuple is the element in the sequence. 
+winners = ["Ashely", "Dylan", "Reese"]
+for index, person in enumerate(winners):
+  print("{} - {}".format(index + 1, person))
