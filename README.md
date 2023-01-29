@@ -473,3 +473,6 @@ List comprehension
 [expression for variable in sequence] - Creates a new list based on the given sequence. Each element is the result of the given expression.
 
 [expression for variable in sequence if condition] - Creates a new list based on the given sequence. Each element is the result of the given expression; elements only get added if the condition is true.  
+
+
+*********DICTIONARIES

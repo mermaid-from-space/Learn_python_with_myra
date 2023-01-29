@@ -1294,9 +1294,25 @@ def guest_list(guests):
 guest_list([('Ken', 30, "Chef"), ("Pat", 35, 'Lawyer'), ('Amanda', 25, "Engineer")])
 
 #Click Run to submit code
-"""
-Output should match:
-Ken is 30 years old and works as Chef
-Pat is 35 years old and works as Lawyer
-Amanda is 25 years old and works as Engineer 
+# """
+# Output should match:
+# Ken is 30 years old and works as Chef
+# Pat is 35 years old and works as Lawyer
+# Amanda is 25 years old and works as Engineer" 
 
+
+
+# **********************************dictionaries!!!!! 
+
+# Like lists, dictionaries are used to organize elements into collections. 
+# Unlike lists, you don't access elements inside dictionaries using their position. 
+# Instead, the data inside dictionaries take the form of pairs of keys and values. T
+# o get a dictionary value we use its corresponding key.
+
+x = {}
+print(type(x))
+
+file_counts = {"jpg" :10, "txt":14, "csv":2, "py":23}
+print(file_counts)
+#  When creating the dictionary we use colons and between the key and the value and separate each pair by commas. 
+#  In a dictionary, it's perfectly fine to mix and match the data types of keys and values like this and can be very useful.
