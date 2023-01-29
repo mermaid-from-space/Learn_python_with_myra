@@ -1314,5 +1314,16 @@ print(type(x))
 
 file_counts = {"jpg" :10, "txt":14, "csv":2, "py":23}
 print(file_counts)
+print(file_counts["txt"])
+print("jpg" in file_counts)
+print("html" in file_counts)
 #  When creating the dictionary we use colons and between the key and the value and separate each pair by commas. 
 #  In a dictionary, it's perfectly fine to mix and match the data types of keys and values like this and can be very useful.
+# Dictionaries are mutable
+# To add an entry in a dictionary, just use the square brackets to create the key and assign a new value to it.
+file_counts["cfg"] = 8
+print(file_counts)
+#  we can delete elements from a dictionary with the del keyword by passing the dictionary 
+#  and the key to the element as if we were trying to access it.
+del file_counts["cfg"]
+print(file_counts)
