@@ -1327,3 +1327,39 @@ print(file_counts)
 #  and the key to the element as if we were trying to access it.
 del file_counts["cfg"]
 print(file_counts)
+
+
+# **********ITERATING OVER THE CONTENTS OF DICYIONARY
+# you can use for loops to iterate through the contents of a dictionary.
+file_counts = {"jpg":10, "txt":14, "csv":2, "py":23}
+for extension in file_counts:
+  print(extension)
+
+# So if you use a dictionary in a for loop, the iteration variable will go through the keys in the dictionary. 
+# If you want to access the associated values, you can either use the keys as indexes of the dictionary 
+# or you can use the items method which returns a tuple for each element in the dictionary
+for ext, amount in file_counts.items():
+  print("There are {} files with the .{} extension" .format(amount, ext))
+
+
+# -------------------PRACTICE QUESTION------------------------
+
+# Complete the code to iterate through the keys and values of the cool_beasts dictionary. 
+# Remember that the items method returns a tuple of key, value for each element in the dictionary.
+cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+for beast, feature in cool_beasts.items():
+    print("{} have {}".format(beast, feature))
+
+# Because we know that each key can be present only once, dictionaries are a great tool for counting elements and analyzing frequency. 
+# Let's check out a simple example of counting how many times each letter appears in a piece of text.
+def count_letters(text):
+  result = {}
+  for letter in text:
+    if letter not in result:
+      result[letter] = 0
+    result[letter] += 1
+  return result
+
+print(count_letters("sssss"))
+print(count_letters("cyborg"))
+print(count_letters("a long strng with a bunch of letters"))
